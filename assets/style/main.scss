@@ -877,17 +877,23 @@ body{
     height: vw(335);
     @include mq(md) {
         padding: mvw(39) mvw(20) mvw(36) mvw(49);
+        height: mvw(400);
 }
     &__content{
         max-width:vw(390);
         margin: 0 auto;
-        
+        @include mq(md) {
+            max-width: mvw(1030);
+        }
     }
     &__content--list{
         width:100%;
         display: flex;
         gap:vw(15);
-        
+        @include mq(md) {
+        gap: mvw(18);
+        justify-content: center;
+        }
     }
     &__content--list--item{
         width: vw(310);
@@ -896,6 +902,12 @@ body{
         border-radius: 10px;
         text-align: center;
         margin: 0 vw(15);
+        @include mq(md) {
+            width: mvw(310);
+            height: mvw(188);
+            margin: 0 mvw(18);
+        }
+
     }
     &__content--list--item--title{
         font-size: vw(18.01);
@@ -903,6 +915,10 @@ body{
         padding: vw(15) 0 vw(14) 0;
         background-color: #fa7da3;
         border-radius: 10px 10px 0 0;
+        @include mq(md) {
+            font-size: mvw(18.01);
+            padding: mvw(15) 0;
+        }
     }
     &__content--list--item--box{
         display: flex;
@@ -910,10 +926,17 @@ body{
         padding: vw(15) vw(13) vw(10) vw(18);
         border-radius: 0 0 10px 10px;
         justify-content: space-between;
+        @include mq(md) {
+            padding: mvw(13) mvw(14) mvw(10) mvw(22);
+        }
     }
     &__content--list--item--box--img{
         width: vw(86);
         height: vw(114);
+        @include mq(md) {
+            width: mvw(78);
+            height: mvw(113);
+        }
     }
     &__content--list--item--box--flex{
         text-align: left;
@@ -922,9 +945,25 @@ body{
         font-size: vw(16);
         color: #fa7da3;
         margin-bottom: vw(13);
+        @include mq(md) {
+            font-size: mvw(16);
+            margin-bottom: mvw(13);
+        }
     }
     &__content--list--item--box--text{
         width: vw(172);
+        font-size: vw(14);
+        @include mq(md) {
+            width: mvw(167);
+            font-size: mvw(14.01);
+        }
+    }
+    .slick-dots{
+        bottom: -50px;
     }
     
+    .slick-dots li button:before{
+        color: #fa7da3;
+        font-size: 20px;
+    }
 }
