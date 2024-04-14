@@ -974,6 +974,7 @@ body {
 
 .voice {
   background-color: #fdf0f5;
+  height: 85.8974358974vw;
 }
 @media screen and (min-width: 768px) {
   .voice {

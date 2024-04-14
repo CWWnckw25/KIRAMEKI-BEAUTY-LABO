@@ -874,12 +874,14 @@ body{
 }
 .voice{
     background-color: #fdf0f5;
+    height: vw(335);
     @include mq(md) {
         padding: mvw(39) mvw(20) mvw(36) mvw(49);
 }
     &__content{
         max-width:vw(390);
         margin: 0 auto;
+        
     }
     &__content--list{
         width:100%;
