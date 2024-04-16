@@ -60,21 +60,22 @@ body{
 }
 .header{
     background-color: #f8f8f8;
-    padding: vw(10) vw(9) vw(1) vw(12);
+    padding: vw(11.5) vw(9) vw(1) vw(12);
     max-width: 100%;
+    height: vw(60);
     @include mq(md) {
     padding: mvw(22) mvw(20) mvw(15) mvw(20);
+    
     }
     &__content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: vw(6);
     max-width: vw(350);
-    margin: 0 auto;
     @include mq(md) {
         max-width: mvw(1030);
         gap: 0;
+        margin: 0 auto;
     }
 }
     &__logo{
@@ -89,7 +90,6 @@ body{
         width: vw(300);
         display: flex;
         gap: vw(10);
-        margin-top: vw(3);
         @include mq(md) {
             width: mvw(512);
             gap: 3%;
@@ -145,7 +145,7 @@ body{
     background-color: #fa7da3;
     max-width: 100%;
     background-size: cover;
-    height: vw(318);
+    height: vw(315);
     @include mq(md) {
         height: mvw(612);
         padding: mvw(0) mvw(20);
@@ -166,16 +166,17 @@ body{
         
     }
     &__top--left--item{
-        padding: vw(23) vw(1) vw(0) vw(20);
+        padding: vw(24) vw(1) vw(0) vw(20);
         color: #fff;
         text-align: center;
         width: vw(178);
-        height: vw(78);
+        height: vw(315);
+        position: relative;
         @include mq(md) {
             padding: mvw(0) mvw(1) mvw(0) mvw(48);
             width: mvw(549);
             height: mvw(611);
-            position: relative;
+            
         }
     }
     &__top--left--full--body--img--pc{
@@ -190,8 +191,8 @@ body{
     }
 }
 &__top--left--full--body--img--sp{
-    width: vw(181);
-    height: vw(75);
+    width: vw(164);
+    height: vw(64);
     @include mq(md) {
     display: none;
 }
@@ -201,11 +202,15 @@ body{
     width: vw(209);
     height: vw(215);
     background-size: cover;
+    position: absolute;
+    top: auto;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    margin-left: vw(4);
     @include mq(md) {
         width: mvw(486);
         height: mvw(500);
-        position: absolute;
-        bottom: 0;
 }
 }
 &__top--right--item{
@@ -222,10 +227,10 @@ body{
         width: vw(188);
         height: vw(107);
         background-color: rgba(247, 223, 223, 0.5);
-        padding: vw(24) vw(20) vw(25) vw(24);
-        gap: vw(14);
+        justify-content: center;
+        gap: vw(11);
         align-items: center;
-        margin-bottom: vw(11);
+        margin-bottom: vw(8);
         box-shadow: 10px 5px 5px #e77497;
         @include mq(md) {
             width: mvw(423.02);
@@ -236,8 +241,9 @@ body{
             margin-bottom: mvw(7);
     }
 }
-    
-    
+&__top--right--content--item{
+    margin-left: vw(4);
+}
     &__top--right--content--now{
         width: vw(47);
         height: vw(23);
@@ -246,7 +252,7 @@ body{
         font-weight: bold;
         color:#fa7da3 ;
         text-align: center;
-        margin-bottom: vw(10);
+        margin-top: vw(5);
         @include mq(md) {
             width: mvw(105.76);
             height: mvw(51.65);
@@ -269,6 +275,7 @@ body{
         color: #fffd7a;
         font-weight: bold;
         font-family: 'Noto Sans JP', sans-serif;
+        margin-top: vw(-10);
         @include mq(md) {
             font-size: mvw(171);
             white-space: nowrap;
@@ -284,7 +291,8 @@ body{
         font-size: vw(14);
         color: #fff;
         width: vw(71);
-        margin-left: 30vw;
+        margin-left: vw(100);
+        margin-bottom: vw(23);
         @include mq(md) {
             font-size: mvw(26.48);
             width: mvw(137);
@@ -330,7 +338,7 @@ body{
 .present{
     height: vw(191);
     background-color: #fffedd;
-    padding: vw(20) vw(19) vw(16) vw(21);
+    padding: vw(18) vw(19) vw(16) vw(21);
     color: #fa7da3;
     text-align: center;
         @include mq(md) {
@@ -350,17 +358,18 @@ body{
     }
 }
 &__content--now--left{
-    width: vw(25);
+    width: vw(30);
     transform: rotate(65deg);
     transform-origin:right top;
     border: 1px solid #fa7da3;
     display: block;
+    margin-right: vw(11);
     @include mq(md) {
         width: mvw(44.2);
     }
 }
 &__content--now--right{
-    width: vw(25);
+    width: vw(30);
     transform: rotate(-65deg);
     transform-origin:left top;
     border: 1px solid #fa7da3;
@@ -374,7 +383,8 @@ body{
     height: vw(93);
     border: 1px solid #fa7da3;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: vw(5);
+    margin-left: vw(1);
     @include mq(md) {
         max-width: mvw(550);
         height: mvw(148);
@@ -387,7 +397,7 @@ body{
     color: #fff;
     font-size: vw(21);
     border-radius: 10px 10px 0 0;
-    height: vw(32);
+    padding-top: -2px;
     @include mq(md) {
         font-size: mvw(32);
         height: mvw(47);
@@ -403,6 +413,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: vw(1.5);
     @include mq(md) {
         font-size: mvw(43.67);
         padding: mvw(23) 0 mvw(24) 0;
@@ -414,6 +425,7 @@ body{
     font-size:vw(42);
     font-weight: bold;
     font-family: 'Noto Sans JP', sans-serif;
+    margin-left:vw(10) ;
     @include mq(md) {
         font-size: mvw(67.93);
     }
@@ -421,14 +433,16 @@ body{
 &__content--note{
     font-size: vw(10);
     color: #000;
+    margin-right: vw(3);
     @include mq(md) {
         font-size: mvw(14);
     }
 }
 }
 .experience{
-    padding: vw(10) vw(10) vw(40) vw(10);
+    padding: vw(12) vw(10) vw(40) vw(10);
     text-align: center;
+    
     @include mq(md) {
     padding: mvw(50) mvw(20) mvw(36) mvw(20);
     }
@@ -443,7 +457,10 @@ body{
     &__content--title{
         font-size: vw(21);
         color: #fa7da3;
-        margin-bottom: vw(13);
+        margin-bottom: vw(10);
+        letter-spacing: 0.1em;
+        margin-left: vw(10);
+        
         @include mq(md) {
             font-size: mvw(34);
             margin-bottom: mvw(22);
@@ -459,10 +476,10 @@ body{
         text-align: center;
         color: #fff;
         border-radius: 50px;
-        padding: vw(16) vw(65);
         font-size: vw(21);
         margin-bottom: vw(30);
         font-weight: bold;
+        gap:vw(15);
         @include mq(md) {
         width: mvw(570.58);
         height: mvw(130.1);
@@ -477,6 +494,9 @@ body{
         text-decoration: none;
         color: #fff;
         display: block;
+        letter-spacing: 0.1em;
+        width: vw(255);
+        padding-left: vw(35);
     }
     .experience-arrow-right{
         display: block;
@@ -498,8 +518,9 @@ body{
     }
     &__content--border--title{
         font-size: vw(17);
-        margin-top: vw(7);
+        margin-top: vw(6);
         margin-bottom: vw(7);
+        letter-spacing: 0.07em;
         @include mq(md) {
             font-size: mvw(28);
             margin-top: mvw(19);
@@ -517,6 +538,7 @@ body{
     }
     &__content--list--item--service--a{
         font-size: vw(14);
+        font-family: 'Noto Sans JP', sans-serif;
         @include mq(md) {
             font-size: mvw(22.86);
         }
