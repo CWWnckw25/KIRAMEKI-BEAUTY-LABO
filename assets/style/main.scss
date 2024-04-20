@@ -64,6 +64,9 @@ body{
     padding: vw(11.5) vw(9) vw(1) vw(12);
     max-width: 100%;
     height: vw(60);
+    position: sticky;
+    top:0;
+    z-index: 1000;
     @include mq(md) {
     padding: mvw(18) mvw(20) mvw(15) mvw(20);
     height: mvw(94);
@@ -527,6 +530,9 @@ body{
         gap: mvw(41);
         margin-bottom: mvw(42);
     }
+}
+&__content--btn:hover{
+    background-color:#40e02f ;
 }
     &__content--btn a{
         text-decoration: none;

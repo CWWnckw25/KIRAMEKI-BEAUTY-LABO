@@ -12,6 +12,9 @@ body {
   padding: 2.9487179487vw 2.3076923077vw 0.2564102564vw 3.0769230769vw;
   max-width: 100%;
   height: 15.3846153846vw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -548,6 +551,9 @@ body {
     gap: min(3.9805825243vw, 2.5625rem);
     margin-bottom: min(4.0776699029vw, 2.625rem);
   }
+}
+.experience__content--btn:hover {
+  background-color: #40e02f;
 }
 .experience__content--btn a {
   text-decoration: none;
