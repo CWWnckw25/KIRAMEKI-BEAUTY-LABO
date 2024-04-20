@@ -7,7 +7,7 @@ $('.voice__content--list').slick({
         slidesToShow: 3,
         slidesToScroll: 3,
         adaptiveHeight: true,
-        variableWidth: true,
+        variableWidth: false,
         
         
         responsive: [{
@@ -16,7 +16,7 @@ $('.voice__content--list').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             centerMode: true,
-            centerPadding: "8%",
+            centerPadding: "10%",
             }
         }]
     });
