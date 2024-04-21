@@ -689,8 +689,8 @@ body{
         width: vw(37.31);
         height: vw(46);
         @include mq(md) {
-            width: mvw(60);
-            height: mvw(60);
+            width: mvw(49);
+            height: mvw(62);
         }
     }
     &__content--item{
@@ -1000,9 +1000,9 @@ body{
     height: vw(335);
     margin-bottom: vw(25.5);
     @include mq(md) {
-        padding: mvw(40) mvw(18) mvw(35) mvw(49);
+        padding: mvw(40) mvw(18) mvw(35) mvw(18);
         height: mvw(410);
-        margin-bottom: mvw(10);
+        margin-bottom: mvw(51);
 }
     &__content{
         max-width:vw(390);
@@ -1017,9 +1017,8 @@ body{
         margin-bottom: 0;
         @include mq(md) {
             padding: mvw(0) mvw(10) mvw(16) mvw(10);
-            gap: mvw(14);
-            margin-bottom: mvw(16);
-            margin-right: mvw(29);
+            gap: mvw(20);
+            margin-bottom: mvw(18);
         }
     }
     &__content--list{
@@ -1059,7 +1058,7 @@ body{
     &__content--list--item--box{
         display: flex;
         background-color: #fff;
-        padding: vw(15) vw(18) vw(8) vw(17);
+        padding: vw(14) vw(18) vw(8) vw(17);
         border-radius: 0 0 10px 10px;
         justify-content: space-between;
         @include mq(md) {
@@ -1070,13 +1069,17 @@ body{
         width: vw(86);
         height: vw(114);
         @include mq(md) {
-            width: mvw(78);
+            width: mvw(76);
             height: mvw(113);
         }
     }
     &__content--list--item--box--flex{
+        width: vw(172);
         text-align: left;
+        @include mq(md) {
+        width: mvw(175);
     }
+}
     &__content--list--item--box--title{
         font-size: vw(16);
         color: #fa7da3;
@@ -1084,14 +1087,12 @@ body{
         letter-spacing: 0.01em;
         @include mq(md) {
             font-size: mvw(16);
-            margin-bottom: mvw(13);
+            margin-bottom: mvw(8);
         }
     }
     &__content--list--item--box--text{
-        width: vw(172);
         font-size: vw(14);
         @include mq(md) {
-            width: mvw(167);
             font-size: mvw(14.01);
         }
     }
@@ -1122,8 +1123,8 @@ body{
             height: vw(40);
             margin: 0 auto;
             @include mq(md) {
-                width: mvw(148);
-                height: mvw(85);
+                width: mvw(145);
+                height: mvw(81);
             }
         }
     }
