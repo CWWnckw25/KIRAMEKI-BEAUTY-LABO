@@ -9,7 +9,7 @@ body {
 
 .header {
   background-color: #f8f8f8;
-  padding: 2.9487179487vw 2.3076923077vw 0.2564102564vw 3.0769230769vw;
+  padding: 0 2.3076923077vw 0 3.0769230769vw;
   max-width: 100%;
   height: 15.3846153846vw;
   position: sticky;
@@ -25,8 +25,8 @@ body {
 .header__content {
   display: flex;
   justify-content: space-between;
-  gap: 1.5384615385vw;
-  max-width: 89.7435897436vw;
+  align-items: center;
+  height: 100%;
 }
 @media screen and (min-width: 768px) {
   .header__content {
@@ -48,6 +48,7 @@ body {
 .header__logo--img {
   width: 17.9487179487vw;
   height: 10vw;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .header__logo--img {
@@ -56,7 +57,7 @@ body {
   }
 }
 .header__btn {
-  width: 76.9230769231vw;
+  width: 74.358974359vw;
   display: flex;
   gap: 2.5641025641vw;
 }
@@ -94,7 +95,7 @@ body {
 }
 .header__btn--inquiry {
   background-color: #fa7da3;
-  padding: 3.0769230769vw 0.5128205128vw 2.0512820513vw 1.0256410256vw;
+  padding: 2.0512820513vw 0.5128205128vw 2.0512820513vw 1.0256410256vw;
   letter-spacing: 0.01em;
   width: 27.4358974359vw;
 }
@@ -1178,7 +1179,7 @@ body {
 .voice__content--list--item--box {
   display: flex;
   background-color: #fff;
-  padding: 3.5897435897vw 4.6153846154vw 2.0512820513vw 4.358974359vw;
+  padding: 3.5897435897vw 4.6153846154vw 2.5641025641vw 4.358974359vw;
   border-radius: 0 0 10px 10px;
   justify-content: space-between;
 }

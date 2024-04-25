@@ -61,7 +61,7 @@ body{
 }
 .header{
     background-color: #f8f8f8;
-    padding: vw(11.5) vw(9) vw(1) vw(12);
+    padding: 0 vw(9) 0 vw(12);
     max-width: 100%;
     height: vw(60);
     position: sticky;
@@ -74,8 +74,8 @@ body{
     &__content{
     display: flex;
     justify-content: space-between;
-    gap: vw(6);
-    max-width: vw(350);
+    align-items: center;
+    height: 100%;
     @include mq(md) {
         max-width: mvw(1030);
         gap: 0;
@@ -93,13 +93,14 @@ body{
     &__logo--img{
         width: vw(70);
         height: vw(39);
+        display: block;
         @include mq(md) {
         width: mvw(99);
         height: mvw(57);
     }
 }
     &__btn{
-        width: vw(300);
+        width: calc(290*100vw/390);
         display: flex;
         gap: vw(10);
         @include mq(md) {
@@ -131,7 +132,7 @@ body{
 }
     &__btn--inquiry{
         background-color: #fa7da3;
-        padding: vw(12) vw(2) vw(8) vw(4);
+        padding: vw(8) vw(2) vw(8) vw(4);
         letter-spacing: 0.01em;
         width: vw(107);
         @include mq(md) {
@@ -1058,7 +1059,7 @@ body{
     &__content--list--item--box{
         display: flex;
         background-color: #fff;
-        padding: vw(14) vw(18) vw(8) vw(17);
+        padding: vw(14) vw(18) vw(10) vw(17);
         border-radius: 0 0 10px 10px;
         justify-content: space-between;
         @include mq(md) {
