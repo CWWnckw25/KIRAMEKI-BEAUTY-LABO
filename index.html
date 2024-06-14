@@ -23,22 +23,26 @@
 <body>
     <header class="header">
         <div class="header__content">
-            <h1 class="header__logo--pc header__logo--sp">
-                <img src="/assets/images/logo.png" alt="KBL" class="header__logo--img">
-            </h1>
+            <a href="/" class="header__logo--link">
+                <h1 class="header__logo--pc header__logo--sp">
+                    <img src="/assets/images/logo.png" alt="KBL Kirameki Beauty Labo" class="header__logo--img">
+                </h1>
+            </a>
             <div class="header__btn">
-                <div class="header__btn--item header__btn--inquiry"><a href="#">お問い合わせ</a><i class="bi bi-chevron-right header-arrow-right"></i></div>
-                <div class="header__btn--item header__btn--counseling"><a href="#">カウンセリング予約<span class="header__btn--free">(無料)</span></a><i class="bi bi-chevron-right header-arrow-right"></i></div>
+                <form action="/contact/" method="POST"><button type="submit" class="header__btn--item header__btn--inquiry">お問い合わせ<i class="bi bi-chevron-right header-arrow-right"></i></button></form>
+                <form action="/reservation/" method="POST"><button type="submit" class="header__btn--item header__btn--counseling">カウンセリング予約<span class="header__btn--free">(無料)</span><i class="bi bi-chevron-right header-arrow-right"></i></button></form>
             </div>
-    </div>
+        </div>
     </header>
     <section class="main">
         <div class="main__top">
             <div class="main__top--flex">
                 <div class="main__top--left--item">
                     <h2 class="main__top--left--full--body">
-                        <img src="/assets/images/main_letter_pc.png" alt="全身脱毛(顔・VIO込み)" class="main__top--left--full--body--img--pc">
-                        <img src="/assets/images/main_letter_sp.png" alt="全身脱毛(顔・VIO込み)" class="main__top--left--full--body--img--sp">
+                        <picture>
+                            <img src="/assets/images/main_letter_pc.png" alt="全身脱毛(顔・VIO込み)" class="main__top--left--full--body--img--pc">
+                            <img src="/assets/images/main_letter_sp.png" alt="全身脱毛(顔・VIO込み)" class="main__top--left--full--body--img--sp">
+                        </picture>
                     </h2>
                     <div class="main__top--left--content--under--img"></div> 
                 </div>
@@ -64,18 +68,20 @@
     </section>
     <section class="present">
         <p class="present__content--now">
-            <span class="present__content--now--left"></span>今だけ！<span class="present__content--now--right"></span>
+            <img src="/assets/images/now_left.png" alt="" class="present__content--now--left">
+            <span class="present__now">今だけ！</span>
+            <img src="/assets/images/now_right.png" alt="" class="present__content--now--right">
         </p>
         <div class="present__content--box">
             <p class="present__content--box--pink">フェイシャルコース</p>
-            <h2 class="present__content--box--white"><span class="present__content--box--white--three">3</span>回プレゼント！</h2>
+            <p class="present__content--box--white"><span class="present__content--box--white--three">3</span>回プレゼント！</p>
         </div>
         <p class="present__content--note">クレンジング/洗顔/フェイスヒーリング/ 整肌</p>  
     </section>
     <section class="experience">
         <div class="experience__btn--item">
-            <h2 class="experience__content--title">無料体験実施中！</h2>
-            <div class="experience__content--btn"><a href="#">カウンセリング予約はこちら（無料）</a><i class="bi bi-chevron-right experience-arrow-right"></i></div>
+            <p class="experience__content--title">無料体験実施中！</p>
+            <form action="/reservation/" method="POST"><button type="submit" class="experience__content--btn">カウンセリング予約はこちら（無料）<i class="bi bi-chevron-right experience-arrow-right"></i></button></form>
         </div>
         <div class="experience__content--box">
             <div class="experience__content--border--groop">
@@ -93,11 +99,13 @@
     </section>
     <section class="threepoint">
         <div class="threepoint__content">
-            <p class="threepoint__content--img"><img src="/assets/images/kirameki_beauty_labo.png" alt="KIRAMEKI BEAUTY LABO" class="threepoint__content--kbl--img"><span class="threepoint__content--kbl--img-text">が選ばれる</span></p>
-            <h2 class="threepoint__content--title"><img src="/assets/images/shape_left_pc.png" alt="" class="threepoint__content--title--module">
-                <span class="threepoint__content--title--module--text">3つのポイント</span><img src="/assets/images/shape_right_pc.png" alt="" class="threepoint__content--title--module">
+            <h2 class="threepoint__content--title">
+                <p class="threepoint__content--img"><img src="/assets/images/kirameki_beauty_labo.png" alt="KIRAMEKI BEAUTY LABO" class="threepoint__content--kbl--img"><span class="threepoint__content--kbl--img-text">が選ばれる</span></p>
+                <p class="threepoint__content--text"><img src="/assets/images/shape_left_pc.png" alt="" class="threepoint__content--title--module">
+                    <span class="threepoint__content--title--module--text">3つのポイント</span><img src="/assets/images/shape_right_pc.png" alt="" class="threepoint__content--title--before--after">
+                </p>
             </h2>
-            <ul class="threepoint__content--box">
+            <ol class="threepoint__content--box">
                 <li class="threepoint__content--item threepoint__content--item--1">
                     <h3 class="threepoint__content--item--point">POINT1<span class="threepoint__content--item--point--border">｜</span>通い放題</h3>
                     <div class="threepoint__content--item--point--container">
@@ -119,8 +127,8 @@
                     <div class="threepoint__content--item--point--container threepoint__content--item--point--container--2">
                         <p class="threepoint__content--item--point--text">「全身プラン」と、施術部位を選べる「部分脱毛プラン」から自由にお選びいただけます。</p>
                         <p class="threepoint__content--item--point2--container--title--a">全身プラン</p>
-                        <div class="threepoint__content--item--point2--container--img"><img src="/assets/images/plan_body.png" alt="" class="threepoint__content--item--point2--container--body"></div>
-                        <div class="threepoint__content--item--point2--container--img--pc"><img src="/assets/images/plan_body_pc.png" alt="" class="threepoint__content--item--point2--container--body--pc"></div>
+                        <div class="threepoint__content--item--point2--container--img"><img src="/assets/images/plan_body.png" alt="全身プランの説明図" class="threepoint__content--item--point2--container--body"></div>
+                        <div class="threepoint__content--item--point2--container--img--pc"><img src="/assets/images/plan_body_pc.png" alt="全身プランの説明図" class="threepoint__content--item--point2--container--body--pc"></div>
                         <p class="threepoint__content--item--point2--container--title--b">部分脱毛プラン</p>
                         <ul class="threepoint__content--item--point2--container--list">
                             <li class="threepoint__content--item--point2--container--list--part">
@@ -154,18 +162,20 @@
                     <h3 class="threepoint__content--item--point">POINT3<span class="threepoint__content--item--point--border">｜</span>安心のサポート</h3>
                     <p class="threepoint__content--item--point--text--3">提携医療機関のサポートがありますので、ご安心ください。</p>
                 </li>
-            </ul>
+            </ol>
         </div>
     </section>
     <div class="experience__btn--item experience__btn--item--under">
-        <h2 class="experience__content--title">無料体験実施中！</h2>
-        <div class="experience__content--btn"><a href="#">カウンセリング予約はこちら（無料）</a><i class="bi bi-chevron-right experience-arrow-right"></i></div>
+        <p class="experience__content--title">無料体験実施中！</p>
+        <form action="/reservation/" method="POST"><button type="submit" class="experience__content--btn">カウンセリング予約はこちら（無料）<i class="bi bi-chevron-right experience-arrow-right"></i></button></form>
     </div>
     <section class="others">
         <div class="others__content">
-            <p class="others__content--pickup">ほかにも選べる！</p>
-            <h2 class="threepoint__content--title others__content--title"><img src="/assets/images/shape_left_pc.png" alt="" class="threepoint__content--title--module">
-                <span class="others__content--title--course">2つのコース</span><img src="/assets/images/shape_right_pc.png" alt="" class="threepoint__content--title--module"></h2>
+            <h2 class="threepoint__content--title others__content--title">
+                <p class="others__content--pickup">ほかにも選べる！</p>
+                <p class="threepoint__content--text others__content--title"><img src="/assets/images/shape_left_pc.png" alt="" class="threepoint__content--title--module">
+                    <span class="others__content--title--course">2つのコース</span><img src="/assets/images/shape_right_pc.png" alt="" class="threepoint__content--title--module"></p>
+            </h2>
             <ul class="others__content--list">
                 <li class="others__content--list--item">
                     <h3 class="others__content--list--item--title">ボディコース</h3>
@@ -182,7 +192,7 @@
     </section>
     <section class="voice">
         <div class="voice__content">
-            <h2 class="threepoint__content--title voice__content--title"><img src="/assets/images/shape_left_pc.png" alt="" class="threepoint__content--title--module">
+            <h2 class="threepoint__content--text voice__content--title"><img src="/assets/images/shape_left_pc.png" alt="" class="threepoint__content--title--module">
                 お客様の声<img src="/assets/images/shape_right_pc.png" alt="" class="threepoint__content--title--module"></h2>
             <div class="voice__content--list">
                 <div class="voice__content--list--item">
@@ -219,11 +229,11 @@
         </div>
     </section>
     <div class="experience__btn--item experience__btn--item--under btn--footer">
-        <h2 class="experience__content--title">無料体験実施中！</h2>
-        <div class="experience__content--btn"><a href="#">カウンセリング予約はこちら（無料）</a><i class="bi bi-chevron-right experience-arrow-right"></i></div>
+        <p class="experience__content--title">無料体験実施中！</p>
+        <form action="/reservation/" method="POST"><button type="submit" class="experience__content--btn">カウンセリング予約はこちら（無料）<i class="bi bi-chevron-right experience-arrow-right"></i></button></form>
     </div>
     <footer class="footer">
-        <img src="/assets/images/footer_pc.png" alt="KBL" class="footer__logo">
+        <img src="/assets/images/footer_pc.png" alt="KBL Kirameki Beauty Labo" class="footer__logo">
     </footer>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
