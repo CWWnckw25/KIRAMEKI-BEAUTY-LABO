@@ -243,9 +243,7 @@ button {
         }
     }
 
-    &__top--left--full--body--img--pc {
-        display: none;
-
+    &__top--left--full--body {
         @include mq(md) {
             display: block;
             width: mvw(543);
@@ -374,7 +372,8 @@ button {
         @include mq(md) {
             font-size: mvw(171);
             white-space: nowrap;
-            margin-top: mvw(-22);
+            line-height: 0.37;
+            margin-top: 0;
         }
     }
 
@@ -446,7 +445,6 @@ button {
         }
     }
 }
-
 .present {
     height: vw(191);
     background-color: #fffedd;
@@ -539,7 +537,7 @@ button {
         @include mq(md) {
             font-size: mvw(67.93);
             margin-left: mvw(18);
-            margin-top: mvw(-13);
+            margin-top: mvw(-22);
         }
     }
 
@@ -1129,6 +1127,7 @@ button {
             margin-bottom: mvw(8);
             margin-top: 0;
             margin-left: 0;
+            display: block;
         }
     }
 
