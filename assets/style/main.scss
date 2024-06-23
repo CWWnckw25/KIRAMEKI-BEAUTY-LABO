@@ -66,8 +66,7 @@ body {
 
 .header {
     background-color: #f8f8f8;
-    padding: 0 vw(9) 0 vw(12
-    );
+    padding: 0 vw(9) 0 vw(12);
 width: 100%;
 height: vw(60);
 position: fixed;
@@ -318,6 +317,7 @@ button {
 
     &__top--right--content--item {
         margin-left: vw(4);
+
         @include mq(md) {
             margin-left: mvw(7);
             display: flex;
@@ -445,6 +445,7 @@ button {
         }
     }
 }
+
 .present {
     height: vw(191);
     background-color: #fffedd;
@@ -488,11 +489,12 @@ button {
         }
     }
 
-    &__now{
+    &__now {
         @include mq(md) {
             margin-top: mvw(7);
+        }
     }
-}
+
     &__content--box--pink {
         background-color: #fa7da3;
         color: #fff;
@@ -554,17 +556,22 @@ button {
         }
     }
 }
-.present__content--now--left,.present__content--now--right{
+
+.present__content--now--left,
+.present__content--now--right {
     width: vw(14);
     height: vw(27);
+
     @include mq(md) {
         width: mvw(30);
         height: mvw(45);
     }
 }
-.present__now{
+
+.present__now {
     margin-left: vw(10);
     letter-spacing: -0.09em;
+
     @include mq(md) {
         margin-left: unset;
         letter-spacing: normal;
@@ -833,6 +840,7 @@ button {
             height: mvw(62);
         }
     }
+
     &__content--title--before--after {
         width: vw(37.31);
         height: vw(46);
