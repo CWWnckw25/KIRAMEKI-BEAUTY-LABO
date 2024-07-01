@@ -242,7 +242,8 @@ button {
         }
     }
 
-    &__top--left--full--body {
+    &__top--left--full--body--img--pc {
+        display: none;
         @include mq(md) {
             display: block;
             width: mvw(543);

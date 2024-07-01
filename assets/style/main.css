@@ -212,8 +212,12 @@ body {
     }
 }
 
+.main__top--left--full--body--img--pc {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
-    .main__top--left--full--body {
+    .main__top--left--full--body--img--pc {
         display: block;
         width: min(52.7184466019vw, 33.9375rem);
         height: min(19.4174757282vw, 12.5rem);
